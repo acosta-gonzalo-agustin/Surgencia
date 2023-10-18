@@ -9,6 +9,12 @@ module.exports = {
     host: process.env.DATABASE_HOST,
     port: process.env.POSTGRES_PORT,
     dialect: 'postgres',
+    dialectOptions: {
+      ssl: {
+        require: true,
+        rejectUnauthorized: false 
+      }
+    }
   },
   test: {
     username: 'root',
@@ -16,6 +22,12 @@ module.exports = {
     database: 'database_test',
     host: 'localhost',
     dialect: 'postgres',
+    dialectOptions: {
+      ssl: {
+        require: true,
+        rejectUnauthorized: false 
+      }
+    },
     port: '5434',
   },
   production: {
@@ -24,6 +36,12 @@ module.exports = {
     database: 'database_production',
     host: '127.0.0.1',
     dialect: 'postgres',
+    dialectOptions: {
+      ssl: {
+        require: true,
+        rejectUnauthorized: false 
+      }
+    },
     port: '5433',
   },
 };

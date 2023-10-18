@@ -1,0 +1,1 @@
+{"version":3,"file":"client.js","sourceRoot":"","sources":["../../../../src/utils/errors/client.ts"],"names":[],"mappings":";;AAAA,MAAqB,WAAY,SAAQ,KAAK;IAE5C,YAAY,OAAe,EAAE,aAAqB,GAAG;QACnD,KAAK,CAAC,OAAO,CAAC,CAAC;QACf,IAAI,CAAC,UAAU,GAAG,UAAU,CAAC;IAC/B,CAAC;IAED,IAAW,UAAU;QACnB,OAAO,IAAI,CAAC,UAAU,CAAC;IACzB,CAAC;CACF;AAVD,8BAUC"}

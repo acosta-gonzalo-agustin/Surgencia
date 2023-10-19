@@ -26,11 +26,12 @@ const createUser = (userData) => __awaiter(void 0, void 0, void 0, function* () 
         if (user) {
             //crear el token para el nuevo usuario
             const accessToken = (0, jwt_1.signToken)({ email: userData.email, id: userData.id });
+            const HOST = process.env.APP_HOST;
             //genera la plantilla de mail
             const pass_mail = `
         <p>este es un mail de bienvenida:</p>
         <p>Puede acceder al siguiente link para generar una contrase&ntilde;a para tu cuenta:</p><div><div>
-        <a href='http://localhost:3001/api/users/generatepass/${user.id}/${accessToken}'>Generate Password</a>
+        <a href='${HOST}/${user.id}/${accessToken}'>Generate Password</a>
         `;
             (0, newUserMail_1.sendNewUserEmail)(user.email, pass_mail);
         }
